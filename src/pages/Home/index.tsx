@@ -65,7 +65,7 @@ const Home: FC = () => {
     []
   );
 
-  const debouncedSearch = useDebounceCallback(_getAnimeSearch, 500);
+  const debouncedSearch = useDebounceCallback(_getAnimeSearch, 250);
 
   const onInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSearchVal(e.target.value);
